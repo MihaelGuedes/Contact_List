@@ -4,6 +4,15 @@
     Gerencie seus contatos agora mesmo!
   </p>
   <p>
-    <%= link_to 'Crie Sua Conta', new_user_path, class: 'btn btn-primary btn-lg' %>
+  <% if !user_signed_in? %>
+    <%= link_to 'Faça Login', entrar_path, class: 'btn btn-primary btn-lg' %>
+  <% else %>
+    Você já está logado! 
+    Vá para sua <%= link_to 'Página de Contatos', contacts_path, class: 'btn btn-primary btn-lg' %>
+  <% end %>
+
+  <% if !user_signed_in? %>
+    ou <%= link_to 'Cadastre-se Agora', new_user_path, class: 'btn btn-primary btn-lg' %>
+  <% end %>
   </p>
 </div>
