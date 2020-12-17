@@ -12,15 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_12_17_121329) do
 
-  create_table "clients", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.date "birthday"
-    t.text "details"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "contacts", force: :cascade do |t|
     t.string "name"
     t.string "phone"

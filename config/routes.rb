@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   resources :contacts
   resources :clients
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:new, :create, :show, :edit, :update]
   
   get 'sessions/new'
   get 'inicio' => 'welcome#index'
