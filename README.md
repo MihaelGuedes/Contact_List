@@ -17,16 +17,23 @@ Pequena aplicação de teste feita em Rails 6.0.3 e Ruby 2.7.1 usando o VS Code.
 
 ## Para executar o projeto:
 
-Antes de tudo, tenha certeza de instalar todos os requisitos necessários.
+Antes de tudo, tenha certeza de instalar todos os requisitos necessários acessando [esse guia](https://github.com/MihaelGuedes/git_e_rails/blob/main/git_rails.md).
 
 ### Clone em sua máquina
 
 ```shell
-https://github.com/MihaelGuedes/Contact_List.git
+git clone https://github.com/MihaelGuedes/Contact_List.git
 ```
 
-### Instale as dependências
+### Instale as dependências:
 ```shell
 cd Contact_List
 bundle install
 ```
+### Banco de Dados
+
+Por padrão estamos usando o sqlite3, database nativo nessa versão do Rails.
+
+### Execute a aplicação
+```shell
+rails s
