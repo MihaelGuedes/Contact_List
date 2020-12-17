@@ -22,7 +22,7 @@ Antes de tudo, tenha certeza de instalar todos os requisitos necessários.
 ### Clone em sua máquina
 
 ```shell
-git clone git@github.com:MihaelGuedes/Contact_List.git
+https://github.com/MihaelGuedes/Contact_List.git
 ```
 
 ### Instale as dependências
